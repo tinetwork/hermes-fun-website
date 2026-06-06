@@ -1,0 +1,1 @@
+const msgs=['Signal received.','Pattern detected.','Meaning translated.','New idea planted.','Connection established.'];document.getElementById('plantButton').addEventListener('click',()=>{document.getElementById('signalText').textContent=msgs[Math.floor(Math.random()*msgs.length)]+'\n'+new Date().toLocaleString();});
