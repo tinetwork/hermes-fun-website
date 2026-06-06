@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signal Garden</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="A small interactive signal garden built for GitHub Pages." />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <p class="eyebrow">A tiny digital experiment</p>
+      <h1>Signal Garden</h1>
+      <p class="intro">Plant a thought. Watch the page answer with color, motion, and a little spark.</p>
+      <div class="actions">
+        <button id="plantButton">Plant a signal</button>
+        <a href="#field">Explore the field</a>
+      </div>
+    </section>
+
+    <section id="field" class="field" aria-label="Interactive signal field">
+      <div class="card big-card">
+        <span class="number">01</span>
+        <h2>Listen</h2>
+        <p>Good tools feel quiet. They keep your focus on the message, not the machine.</p>
+      </div>
+      <div class="card">
+        <span class="number">02</span>
+        <h2>Translate</h2>
+        <p>Meaning lives between words, tone, timing, and context.</p>
+      </div>
+      <div class="card">
+        <span class="number">03</span>
+        <h2>Build</h2>
+        <p>Small ideas become real when you give them a place to run.</p>
+      </div>
+    </section>
+
+    <section class="console">
+      <div class="console-top">
+        <span></span><span></span><span></span>
+      </div>
+      <pre id="signalText">status: waiting for your signal...</pre>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
